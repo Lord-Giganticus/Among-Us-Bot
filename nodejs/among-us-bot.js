@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 client.once('ready', async () => {
     console.log('Ready!')
-	client.user.setActivity('A!info')
+	client.user.setActivity(`${prefix}info`)
 })
 
 client.on('message', message => {
