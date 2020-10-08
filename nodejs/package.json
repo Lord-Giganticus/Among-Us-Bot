@@ -1,0 +1,22 @@
+{
+  "name": "among-us-bot",
+  "version": "1.0.0",
+  "description": "A lightweight discord bot build on discord.js for among us VCs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lord-Giganticus/Among-Us-Bot.git"
+  },
+  "author": "Lord-Giganticus",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Lord-Giganticus/Among-Us-Bot/issues"
+  },
+  "homepage": "https://github.com/Lord-Giganticus/Among-Us-Bot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
