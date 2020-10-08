@@ -12,7 +12,7 @@ client.once('ready', async () => {
 client.on('message', message => {
 
     if(message.content.startsWith(`${prefix}info`)) {
-        message.channel.send("Among Us Bot commands: ```A!info: Displays this. A!invite: Sends the bot invite A!join: Joins the VC you are in. A!dis: Discconects from the VC. A!mute: Mutes all members in the VC. A!unmute: Unmutes all members in the VC.```")
+        message.channel.send("Among Us Bot commands: ```A!info: Displays this. A!invite: Sends the bot invite A!join: Joins the VC you are in. A!dis: Disconects from the VC. A!mute: Mutes all members in the VC. A!unmute: Unmutes all members in the VC.```")
     }
 
     if(message.content.startsWith(`${prefix}invite`)) {
