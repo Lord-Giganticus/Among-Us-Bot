@@ -1,7 +1,7 @@
 {
   "name": "among-us-bot",
   "version": "1.0.0",
-  "description": "A lightweight discord bot build on discord.js for among us VCs",
+  "description": "A lightweight discord bot built on discord.js for among us VCs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
