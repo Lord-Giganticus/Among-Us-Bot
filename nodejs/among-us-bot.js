@@ -24,20 +24,20 @@ client.on('message', message => {
     }
 
     if(message.content.startsWith(`${prefix}dis`)) {
-        message.member.voiceChannel.leave();
+        message.member.voice.channel.leave();
     }
 
     if(message.content.startsWith(`${prefix}mute`)) {
-        let channel = message.member.voiceChannel;
-        for (let member of channel.members) {
-            member[1].setMute(true)
+        let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
+        for (const [memberID, member] of channel.members) {
+        member.voice.setMute(true);
         }
     }
 
     if(message.content.startsWith(`${prefix}unmute`)) {
-        let channel = message.member.voiceChannel;
-        for (let member of channel.members) {
-            member[1].setMute(flase)
+        let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
+        for (const [memberID, member] of channel.members) {
+        member.voice.setMute(false);
         }
     }
 })
