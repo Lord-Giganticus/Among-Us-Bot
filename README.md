@@ -1,6 +1,9 @@
 # Among-Us-Bot
 A lightweight discord bot built on discord.js for among us VCs
 
+# Notes:
+I won’t be able to keep the bot online 24/7 but I’ll try to have it online as long as possible.
+
 # How to contribute:
 1. Fork this repo
 2. Clone it
