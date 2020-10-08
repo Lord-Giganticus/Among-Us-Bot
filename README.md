@@ -1,5 +1,5 @@
 # Among-Us-Bot
-A lightweight discord bot build on discord.js for among us VCs
+A lightweight discord bot built on discord.js for among us VCs
 
 # How to contribute:
 1. Fork this repo
