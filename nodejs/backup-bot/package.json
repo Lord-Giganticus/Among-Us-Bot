@@ -1,0 +1,22 @@
+{
+  "name": "backup-among-us-bot",
+  "version": "1.0.0",
+  "description": "A lightweight discord bot built on discord.js for among us VCs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mattamech/Backup-Among-Us-Bot.git"
+  },
+  "author": "Lord-Giganticus",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Mattamech/Backup-Among-Us-Bot/issues"
+  },
+  "homepage": "Mattamech/Backup-Among-Us-Bot/tree/backup-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
