@@ -19,7 +19,7 @@ client.on('message', message => {
         message.channel.send("https://discord.com/oauth2/authorize?client_id=763810277548228680&scope=bot&permissions=22039552")
     }
 
-    if(message.content.startswith(`${prefix}backup`)) {
+    if(message.content.startsWith(`${prefix}backup`)) {
         message.channel.send("https://discord.com/oauth2/authorize?client_id=764110739459670036&scope=bot&permissions=22039552")
     }
 
