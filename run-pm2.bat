@@ -1,0 +1,1 @@
+pm2 start nodejs/among-us-bot.js --watch
