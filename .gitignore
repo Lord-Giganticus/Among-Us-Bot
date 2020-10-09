@@ -1,3 +1,4 @@
 **/nodejs/config.json
 /nodejs/node_modules
-/nodejs/backup bot/node_modules
+/nodejs/backup-bot/node_modules
+**/nodejs/backup-bot/config.json
