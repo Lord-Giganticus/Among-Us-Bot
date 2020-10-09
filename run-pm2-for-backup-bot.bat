@@ -1,0 +1,1 @@
+pm2 start nodejs/backup-bot/backup-among-us-bot.js --watch
