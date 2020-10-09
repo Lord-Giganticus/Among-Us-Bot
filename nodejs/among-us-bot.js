@@ -24,7 +24,11 @@ client.on('message', message => {
     }
 
     if(message.content.startsWith(`${prefix}dis`)) {
-        message.member.voice.channel.leave();
+       let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
+        for (const [memberID, member] of channel.members) {
+        member.voice.setMute(false);
+        }
+       message.member.voice.channel.leave();
     }
 
     if(message.content.startsWith(`${prefix}mute`)) {
