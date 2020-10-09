@@ -5,8 +5,8 @@ Two lightweight discord bots built on discord.js for among us VCs
 I won’t be able to keep the bots online 24/7 but I’ll try to have it online as long as possible.
 
 # Links:
-[Normal Bot](https://discord.com/oauth2/authorize?client_id=763810277548228680&scope=bot&permissions=22039552)
-[Backup Bot](https://discord.com/oauth2/authorize?client_id=764110739459670036&scope=bot&permissions=22039552)
+1. [Normal Bot](https://discord.com/oauth2/authorize?client_id=763810277548228680&scope=bot&permissions=22039552)
+2. [Backup Bot](https://discord.com/oauth2/authorize?client_id=764110739459670036&scope=bot&permissions=22039552)
 
 # How to contribute:
 1. Fork this repo
