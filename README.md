@@ -11,11 +11,11 @@ I won’t be able to keep the bots online 24/7 but I’ll try to have it online 
 # How to contribute:
 1. Fork this repo
 2. Clone it
-3. In the nodejs folder use a terminal to run `npm install` to install dependencies. (For the backup bot do the same thing in the backup-bot folder)
+3. Use the `Install.py` from the [Latest Release of it.](https://github.com/Lord-Giganticus/Among-Us-Bot/releases/latest) or do `npm install` in the bot folders
 4. Go to the developer tab of discord.com to make a bot and nab its token.
 5. Put the token in the put-token-here area of example_config.json and save it as config.json
 6. Run the bot either using your terminal or the .bat files in the repo (`yarn install pm2` if you want to install pm2 rly easily.)
-7. When you commit new stuff to your forked repo and think it'll be of good use make a PR
+7. When you commit new stuff to your forked repo and think it'll be of good use make a PR.
 
 **I HIGHLY RECOMEND YOU DO NOT PUT THE BOT'S TOKEN IN AMONG-US-BOT.JS OR BACKUP-AMONG-US-BOT.JS INSTEAD MAKE A CONFIG.JSON FILE.** I have made a example file in the nodejs and nodejs/backup-bot folders
 
