@@ -11,7 +11,7 @@ I won’t be able to keep the bots online 24/7 but I’ll try to have it online 
 # How to contribute:
 1. Fork this repo
 2. Clone it
-3. Use the `Install.py` from the [Latest Release of it](https://github.com/Lord-Giganticus/Among-Us-Bot/releases/latest) or do `npm install` in the bot folders.
+3. Either use `Install.py` from the [Latest Release of it](https://github.com/Lord-Giganticus/Among-Us-Bot/releases/latest) or do `npm install` in the bot folders.
 4. Go to the developer tab of discord.com to make a bot and nab its token.
 5. Put the token in the put-token-here area of example_config.json and save it as config.json
 6. Run the bot either using your terminal or the .bat files in the repo (`yarn install pm2` if you want to install pm2 rly easily.)
