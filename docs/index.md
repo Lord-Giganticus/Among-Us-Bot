@@ -20,3 +20,5 @@ I won’t be able to keep the bots online 24/7 but I’ll try to have it online 
 **I HIGHLY RECOMEND YOU DO NOT PUT THE BOT'S TOKEN IN AMONG-US-BOT.JS OR BACKUP-AMONG-US-BOT.JS INSTEAD MAKE A CONFIG.JSON FILE.** I have made a example file in the nodejs and nodejs/backup-bot folders
 
 *This Project is licensend under the [GPL-3.0 License](https://github.com/Lord-Giganticus/Among-Us-Bot/blob/main/LICENSE).*
+
+[Back to main page](https://lord-giganticus.github.io/)
