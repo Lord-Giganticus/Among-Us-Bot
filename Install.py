@@ -22,6 +22,8 @@ if Bot_Choice == "1":
     print(os.getcwd())
     input("If this is not correct this WILL NOT work. Press enter to continue.")
     os.chdir("nodejs")
+    if os.path.isdir('node_modules') == True:
+        os.system('cmd /c RD /S /Q node_modules')
     os.system('cmd /c npm install')
     input("Complete. Press enter to exit.")
     exit()
@@ -31,6 +33,8 @@ elif Bot_Choice == "2":
     print(os.getcwd())
     input("If this is not correct this WILL NOT work. Press enter to continue.")
     os.chdir("nodejs/backup-bot")
+    if os.path.isdir('node_modules') == True:
+        os.system('cmd /c RD /S /Q node_modules')
     os.system('cmd /c npm install')
     input("Complete. Press enter to exit.")
     exit()
@@ -40,8 +44,12 @@ elif Bot_Choice == "3":
     print(os.getcwd())
     input("If this is not correct this WILL NOT work. Press enter to continue.")
     os.chdir("nodejs")
+    if os.path.isdir('node_modules') == True:
+        os.system('cmd /c RD /S /Q node_modules')
     os.system('cmd /c npm install')
     os.chdir("backup-bot")
+    if os.path.isdir('node_modules') == True:
+        os.system('cmd /c RD /S /Q node_modules')
     os.system('cmd /c npm install')
     input("Complete. Press enter to exit.")
     exit()
