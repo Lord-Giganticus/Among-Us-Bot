@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: "npm"
+    directory: "/nodejs"
+    # Check the npm registry for updates every day (weekdays)
+    schedule:
+      interval: "daily"
+  - package-ecosystem: “npm”
+    directory: “/nodejs/backup-bot”
+      interval: “daily”
