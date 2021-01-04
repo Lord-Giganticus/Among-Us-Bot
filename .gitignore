@@ -2,3 +2,4 @@
 /nodejs/node_modules
 /nodejs/backup-bot/node_modules
 **/nodejs/backup-bot/config.json
+/__pycache__

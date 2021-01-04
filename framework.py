@@ -2,9 +2,7 @@ import os
 
 def error():
     input("Something went wrong! Press enter to exit")
-    exit()
-def cmd():
-    cmd_choice = input("Enter the number on which cmd program you want to use.\n[1] Node\n[2] PM2\n")
+    exit() 
 def run_both_bat():
     os.system('cmd /k node_normal_bot.bat')
     os.system('cmd /k node_backup_bot.bat')

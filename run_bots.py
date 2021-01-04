@@ -3,7 +3,7 @@ from framework import *
 
 bot_choice = input("Enter the number on which bot you wish to run.\n[1] Normal Bot\n[2] Backup Bot\n[3] Both\n")
 if bot_choice == "1":
-    cmd()
+    cmd_choice = input("Enter the number on which cmd program you want to use.\n[1] Node\n[2] PM2\n")
     if cmd_choice == "1":
         try:
             os.system('cmd /k node_normal_bot.bat')
@@ -22,7 +22,7 @@ if bot_choice == "1":
     else:
         error()
 elif bot_choice == "2":
-    cmd()
+    cmd_choice = input("Enter the number on which cmd program you want to use.\n[1] Node\n[2] PM2\n")
     if cmd_choice == "1":
         try:
             os.system('cmd /k node_backup_bot.bat')
@@ -41,7 +41,7 @@ elif bot_choice == "2":
     else:
         error()
 elif bot_choice == "3":
-    cmd()
+    cmd_choice = input("Enter the number on which cmd program you want to use.\n[1] Node\n[2] PM2\n")
     if cmd_choice == "1":
         try:
             run_both_bat()
