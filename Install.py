@@ -1,5 +1,13 @@
 import os
 
+def run():
+    run_choice = input("Complete. Do you wish to use the run.py file? If so enter 1, if not enter 2.")
+    if run_choice == "1":
+        os.system('cmd /c py -3 run.py')
+        exit()
+    if run_choice == "2":
+        exit()
+
 Download_Location = input("Enter where you want the repo to be cloned:")
 os.chdir(Download_Location)
 print(os.getcwd())
@@ -25,8 +33,7 @@ if Bot_Choice == "1":
     if os.path.isdir('node_modules') == True:
         os.system('cmd /c RD /S /Q node_modules')
     os.system('cmd /c npm install')
-    input("Complete. Press enter to exit.")
-    exit()
+    run()
 elif Bot_Choice == "2":
     Repo_Folder = input("Enter the location of the cloned folder:")
     os.chdir(Repo_Folder)
@@ -36,8 +43,7 @@ elif Bot_Choice == "2":
     if os.path.isdir('node_modules') == True:
         os.system('cmd /c RD /S /Q node_modules')
     os.system('cmd /c npm install')
-    input("Complete. Press enter to exit.")
-    exit()
+    run()
 elif Bot_Choice == "3":
     Repo_Folder = input("Enter the location of the cloned folder:")
     os.chdir(Repo_Folder)
@@ -51,8 +57,7 @@ elif Bot_Choice == "3":
     if os.path.isdir('node_modules') == True:
         os.system('cmd /c RD /S /Q node_modules')
     os.system('cmd /c npm install')
-    input("Complete. Press enter to exit.")
-    exit()
+    run()
 else:
     input("Whoops! That wasn't supposed to happen Press enter to exit.")
     exit()
