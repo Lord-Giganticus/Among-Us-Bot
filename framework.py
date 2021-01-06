@@ -5,6 +5,8 @@ def error(x, y):
         print('The Program had a error on line',str(x)+'.')
     elif y!= 0:
         print('The Program may have had a error on line',str(x),'to line',str(y)+'.')
+    elif y < 0:
+        print('The y value is less than 0! y is currently set to',y+'.\nThe line x is set to is line',x+'.\nPlease report this on the issues tab of the github repo.')
     input('Press enter to exit.')
     exit() 
 def run_both_bat():
