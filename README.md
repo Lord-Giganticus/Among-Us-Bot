@@ -1,5 +1,6 @@
 # Among-Us-Bot + Backup-Bot
 * ![CodeQL](https://github.com/Lord-Giganticus/Among-Us-Bot/workflows/CodeQL/badge.svg)
+* ![Python application](https://github.com/Lord-Giganticus/Among-Us-Bot/workflows/Python%20application/badge.svg)
 
 Two lightweight discord bots built on discord.js for among us VCs
 
