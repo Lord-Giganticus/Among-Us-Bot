@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-const {prefix, token} = require('./config.json');
+const {prefix, token, BotID} = require('./config.json');
 
 const client = new Discord.Client();
 
@@ -28,24 +28,36 @@ client.on('message', message => {
     }
 
     if(message.content.startsWith(`${prefix}dis`)) {
-       let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
-        for (const [memberID, member] of channel.members) {
-        member.voice.setMute(false);
-        }
-       message.member.voice.channel.leave();
-    }
+        let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
+         for (const [memberID, member] of channel.members in message.member.voice.channel()) {
+             if (memberID == BotID) {
+                 //pass
+             } else {
+                 member.voice.setMute(false);
+             }
+         }
+        message.member.voice.channel.leave();
+     }
 
-    if(message.content.startsWith(`${prefix}mute`)) {
+     if(message.content.startsWith(`${prefix}mute`)) {
         let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
         for (const [memberID, member] of channel.members) {
-        member.voice.setMute(true);
+            if (memberID == BotID) {
+                //pass
+            } else {
+                member.voice.setMute(true);
+            }
         }
     }
 
     if(message.content.startsWith(`${prefix}unmute`)) {
         let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
         for (const [memberID, member] of channel.members) {
-        member.voice.setMute(false);
+            if (memberID == BotID) {
+                //pass
+            } else {
+                member.voice.setMute(false);
+            };
         }
     }
 })
