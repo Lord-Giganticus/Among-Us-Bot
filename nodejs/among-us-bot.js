@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-const {prefix, token, BotID} = require('./config.json');
+const {prefix, token, BotID, BackupBotID} = require('./config.json');
 
 const client = new Discord.Client();
 
@@ -16,11 +16,11 @@ client.on('message', message => {
     }
 
     if(message.content.startsWith(`${prefix}invite`)) {
-        message.channel.send("https://discord.com/oauth2/authorize?client_id=763810277548228680&scope=bot&permissions=22039552")
+        message.channel.send(`https://discord.com/oauth2/authorize?client_id=${BotID}&scope=bot&permissions=22039552`)
     }
 
     if(message.content.startsWith(`${prefix}backup`)) {
-        message.channel.send("https://discord.com/oauth2/authorize?client_id=764110739459670036&scope=bot&permissions=22039552")
+        message.channel.send(`https://discord.com/oauth2/authorize?client_id=${BackupBotID}&scope=bot&permissions=22039552`)
     }
 
     if(message.content.startsWith(`${prefix}join`)) {
@@ -31,6 +31,8 @@ client.on('message', message => {
        let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
         for (const [memberID, member] of channel.members in message.member.voice.channel()) {
             if (memberID == BotID) {
+                //pass
+            } else if (memberID == BackupBotID) {
                 //pass
             } else {
                 member.voice.setMute(false);
@@ -44,6 +46,8 @@ client.on('message', message => {
         for (const [memberID, member] of channel.members) {
             if (memberID == BotID) {
                 //pass
+            } else if (memberID == BackupBotID) {
+                //pass
             } else {
                 member.voice.setMute(true);
             }
@@ -55,9 +59,11 @@ client.on('message', message => {
         for (const [memberID, member] of channel.members) {
             if (memberID == BotID) {
                 //pass
+            } else if (memberID == BackupBotID) {
+                //pass
             } else {
                 member.voice.setMute(false);
-            };
+            }
         }
     }
 })

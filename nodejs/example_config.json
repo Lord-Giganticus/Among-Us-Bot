@@ -1,5 +1,6 @@
 {
 	"prefix":"A!",
 	"token":"token goes here",
-	"BotID":"Your bot's USERID goes here."
+	"BotID":"Your bot's USERID goes here.",
+	"BackupBotID":"Your Backup bot's USERID goes here."
 }
