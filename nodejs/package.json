@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Lord-Giganticus/Among-Us-Bot#readme",
   "dependencies": {
-    "discord.js": "^13.0.1"
+    "discord.js": "^13.2.0"
   }
 }
