@@ -17,6 +17,6 @@
   },
   "homepage": "Mattamech/Backup-Among-Us-Bot/tree/backup-bot#readme",
   "dependencies": {
-    "discord.js": "^13.0.1"
+    "discord.js": "^13.2.0"
   }
 }
